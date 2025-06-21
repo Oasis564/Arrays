@@ -37,8 +37,28 @@ public class App {
 
         // write a program to ask the choice of the user
 
-        system.out.println("do you want to do a 1d array or 2d array?");
+        System.out.println("do you want to do a 1d array or 2d array? choose between 1 or 2(1 is 1d, 2 is 2d)");
         int choice;
+        choice = s.nextInt();
+
+        if(choice == 1){
+            for(int i = 0; i < 5; i++){
+                System.out.println(arr[i]);
+            }
+        }
+
+        if(choice == 2){
+            for(int i = 0; i < 3; i++){
+                for(int j = 0; j < 3; j++){
+                    System.out.println(arr1[i][j]);
+                }
+            }
+        }
+
+        else{
+            System.out.println("this is not available");
+        }
+
 
     }
 }
